@@ -1,4 +1,4 @@
-import json
+import json # Using json to save the sorted words
 
 words = {
     "Bet":"Agreement or approval.  Can be said as a question to ask if someone wants to do something or confirm.", 
