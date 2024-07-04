@@ -1,5 +1,5 @@
 import json
-from mainProject1_copy import checkingPerLetters
+from mainProj1 import checkingPerLetters
 
 f = open('sample.json')
 sortedWords = json.load(f)

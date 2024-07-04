@@ -17,9 +17,9 @@ words = {
 slangWords = list(words.keys())
 
 def checkingPerLetters(slangWords):
-    n = len(slangWords)
+    n = len(slangWords) # checking the length of the list. This will be the indicator when to stop knowing that the sorting is done
 
-    if n <= 1:
+    if n <= 1: 
         return
 
     for i in range(1, n):
@@ -32,22 +32,22 @@ def checkingPerLetters(slangWords):
 
             # Compare character by character
             char_index = 0
-            while char_index < min(len(selected_word), len(compared_word)):
-                if selected_word[char_index] == compared_word[char_index]:
-                    char_index += 1
+            while char_index < min(len(selected_word), len(compared_word)): # Finding the length of both words and set as the criteria.
+                if selected_word[char_index] == compared_word[char_index]: # If the character is the same; 
+                    char_index += 1                                        # It will increment by one
                 else:
                     break
 
             # Determine if we need to move the selected_word
-            if char_index < min(len(selected_word), len(compared_word)):
-                if selected_word[char_index] < compared_word[char_index]:
-                    slangWords[j + 1] = compared_word
-                    j -= 1
+            if char_index < min(len(selected_word), len(compared_word)): # char_index
+                if selected_word[char_index] < compared_word[char_index]: # the currect index of index of the word
+                    slangWords[j + 1] = compared_word # {Apple,Apple.Application}
+                    j -= 1  # j = -1 since the initial of j is 0
                 else:
                     break
             else:
-                if len(selected_word) < len(compared_word):
-                    slangWords[j + 1] = compared_word
+                if len(selected_word) < len(compared_word): 
+                    slangWords[j + 1] = compared_word  # j = 0 which is index 0
                     j -= 1
                 else:
                     break
