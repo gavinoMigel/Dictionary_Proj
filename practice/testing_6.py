@@ -92,5 +92,5 @@ checkingPerLetters(slangWords)
 
 updated_words = {key: words[key] for key in slangWords}
 with open("sample.json", "w") as outfile:
-    json.dump(updated_words, outfile,indent=4)
+    json.dump(updated_words, outfile)
 print("Saved in sample.json")

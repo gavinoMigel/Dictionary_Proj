@@ -4,7 +4,7 @@ from mainProj1 import checkingPerLetters
 f = open('sample.json')
 sortedWords = json.load(f)
 
-y = {"Amobot":"Voting for the wrong person"}
+y = {"Simp" : "Someone who does way too much for a person they like."}
 
 sortedWords.update(y)
 
@@ -17,5 +17,4 @@ newlySorted = {key:sortedWords[key] for key in sorting}
 with open("sample.json", "w") as outfile:
     json.dump(newlySorted, outfile)
 
-print(newlySorted)
-#I have something to say; This is a testing.
+print("New Word, Already Added!")

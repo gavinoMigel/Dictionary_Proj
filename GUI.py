@@ -8,7 +8,7 @@ with open("sample.json", "r") as file:
 
 # Initialize the root window
 root = tk.Tk()
-root.title("Slang Dictionary")
+root.title("CPP: Contemporary Pop Phrase - Slang Dictionary")
 root.geometry("500x500")
 root.config(bg="lightblue")
 
