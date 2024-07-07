@@ -1,4 +1,4 @@
-#CPP : Contemporary Pop Phrasepedia - The CPP Slang Dictionary Using Insertion Sort Algorithm
+# CPP : Contemporary Pop Phrasepedia - The CPP Slang Dictionary Using Insertion Sort Algorithm
 
 HOW TO USE THE PROGRAM:
 
